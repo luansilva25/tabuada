@@ -22,6 +22,11 @@ else{
 }
     }
 
+function exibirLista(){
+    const txt= document.querySelector('#lista')
+    const lis= document.querySelector('li')
+
     
+}
 
   
