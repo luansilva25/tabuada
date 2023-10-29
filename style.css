@@ -26,3 +26,16 @@
 .tabuada input::-webkit-inner-spin-button{
     display: none;
 }
+.container form{
+    display: flex;
+    flex-direction: column;
+}
+.lista{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.lista ul{
+    list-style: none;
+    margin-right: 30px ;
+}

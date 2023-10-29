@@ -22,11 +22,18 @@ else{
 }
     }
 
-function exibirLista(){
-    const txt= document.querySelector('#lista')
-    const lis= document.querySelector('li')
+function exibirLista() {
+    let pesquisa = document.getElementById("lista").value;
+    pesquisa = pesquisa.toLowerCase();
+    let itensLista = document.getElementsByTagName("li");
 
-    
+    for (i = 0; i < itensLista.length; i++) {
+        if (!itensLista[i].innerHTML.toLocaleLowerCase().startsWith(pesquisa)) {
+            itensLista[i].style.display = "none"
+        } else {
+            itensLista[i].style.display = "list-item"
+        }
+    }
 }
 
   
